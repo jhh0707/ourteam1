@@ -53,7 +53,7 @@ def get_response(user_input):
 st.title("타격폼의 주인공 찾기")
 
 # 이미지 표시
-st.image("Baseball stencils.jpg",, use_column_width=True)
+st.image("Baseball stencils.jpg", use_column_width=True)
 
 st.write("프로젝트에 관한 질문을 입력해보세요. 예: 포트폴리오 주제가 뭔가요?")
 
