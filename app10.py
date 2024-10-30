@@ -52,3 +52,15 @@ def get_response(user_input):
 # Streamlit 인터페이스
 st.title("타격폼의 주인공 찾기")
 st.write("프로젝트에 관한 질문을 입력해보세요. 예: 포트폴리오 주제가 뭔가요?")
+
+user_input = st.text_input("user", "")
+
+if st.button("Submit"):
+    if user_input:
+        get_response(user_input)
+        user_input = ""  # 입력 초기화
+
+# 대화 이력 표시
+for message in st.session_state.history:
+    st.write(f"**사용자**: {message['user']}")
+    st.write(f"**챗봇**: {message['bot']}")
