@@ -35,7 +35,8 @@ with st.container():
                     <p style='color:#888;'>여기에 인물 검출 결과가 표시됩니다.</p>
                 </div>
                 """,
-                unsafe_allow_html=True)
+                unsafe_allow_html=True,
+            )
 
 # 사물 검출 버튼 추가
 if st.button("인물 검출 실행"):
