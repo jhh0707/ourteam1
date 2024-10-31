@@ -21,7 +21,7 @@ if model_file:
     st.success("모델이 성공적으로 로드되었습니다.")
 
 # 비디오 파일 업로드
-uploaded_file = st.file_uploader("비디오 파일을 업로드하세요", type=["mp4", "mov", "avi"])
+uploaded_file = st.file_uploader("비디오 파일을 업로드하세요", type=["mp4", "mov", "avi", "mkv"])
 
 # 원본 영상 표시
 if uploaded_file is not None:
