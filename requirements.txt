@@ -1,4 +1,8 @@
-sentence-transformers
+sentence_transformers
 pandas
 streamlit
-gradio
+opencv-python-headless
+ultralytics
+ffmpeg-python
+ffmpeg
+moviepy
