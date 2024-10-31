@@ -43,14 +43,6 @@ with st.container():
                 unsafe_allow_html=True,
             )
 
-# 사물 검출 버튼 추가
-if st.button("인물 검출 실행"):
-    if uploaded_file is not None:
-        st.session_state["processed_video"] = uploaded_file
-        st.success("인물 검출이 완료되어 오른쪽에 표시됩니다.")
-    else:
-        st.warning("인물 검출을 실행하려면 비디오 파일을 업로드하세요.")
-
 # 사물 검출 버튼 클릭 이벤트 처리
 if st.button("인물 검출 실행") and uploaded_file and model_file:
     with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as temp_output:
