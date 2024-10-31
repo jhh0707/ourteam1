@@ -25,6 +25,7 @@ with st.container():
 
     with col2:
         st.header("인물 검출 결과 영상")
+        result_placeholder = st.empty()
         if "processed_video" in st.session_state:
             st.video(st.session_state["processed_video"])
         else:
